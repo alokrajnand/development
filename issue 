@@ -1,0 +1,10 @@
+### first issue faces in the process of development 
+
+sqlmyclient installation issue solved by -- 
+pip3 install pymysql 
+and then change the __init__.py with the below code
+
+
+import pymysql
+pymysql.version_info = (1, 3, 13, "final", 0)
+pymysql.install_as_MySQLdb()
